@@ -1,0 +1,7 @@
+apiVersion: "fluxwebstats.fluxcd.io/v1alpha1"
+kind: Daily
+metadata:
+  name: my-new-daily-stat
+spec:
+  cronSpec: "* * * * */5"
+  image: my-awesome-cron-image

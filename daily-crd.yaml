@@ -1,0 +1,31 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: dailies.fluxwebstats.fluxcd.io
+spec:
+  group: fluxwebstats.fluxcd.io
+  names:
+    kind: Daily
+    plural: dailies
+    shortNames:
+    - day
+    singular: daily
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              cronSpec:
+                type: string
+              image:
+                type: string
+              replicas:
+                type: integer
+    served: true
+    storage: true
