@@ -1,0 +1,80 @@
+GIT
+  remote: https://github.com/kingdonb/kube-dsl.git
+  revision: ffb0343510b056415186dec6725f84f7bd29594c
+  specs:
+    kube-dsl (0.6.1)
+      dry-inflector (~> 0.2)
+      sorbet-runtime-stub (~> 0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.3)
+    concurrent-ruby (1.1.10)
+    dry-configurable (0.13.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.6)
+    dry-container (0.9.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+    dry-core (0.7.1)
+      concurrent-ruby (~> 1.0)
+    dry-equalizer (0.3.0)
+    dry-inflector (0.2.1)
+    dry-logic (1.2.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-struct (1.3.0)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.3)
+      dry-types (~> 1.3)
+      ice_nine (~> 0.11)
+    dry-types (1.4.0)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.3)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
+    excon (0.92.1)
+    hashdiff (1.0.1)
+    ice_nine (0.11.2)
+    json (2.6.1)
+    jsonpath (0.9.9)
+      multi_json
+      to_regexp (~> 0.2.1)
+    k8s-ruby (0.12.0)
+      dry-configurable (~> 0.13.0)
+      dry-struct (~> 1.3.0)
+      dry-types (~> 1.4.0)
+      excon (~> 0.71)
+      hashdiff (~> 1.0.0)
+      jsonpath (~> 0.9.5)
+      recursive-open-struct (~> 1.1.3)
+      yajl-ruby (~> 1.4.0)
+      yaml-safe_load_stream2 (~> 0.1.1)
+    method_source (1.0.0)
+    multi_json (1.15.0)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    recursive-open-struct (1.1.3)
+    sorbet-runtime-stub (0.2.0)
+    to_regexp (0.2.1)
+    yajl-ruby (1.4.1)
+    yaml-safe_load_stream2 (0.1.1)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  json
+  k8s-ruby (< 1)
+  kube-dsl (< 1)!
+  pry
+
+RUBY VERSION
+   ruby 2.7.5p203
+
+BUNDLED WITH
+   2.3.8
